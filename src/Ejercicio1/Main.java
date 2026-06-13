@@ -9,9 +9,10 @@ public class Main {
         HiloArchivo archivo2 = new HiloArchivo("Archivo2");
         HiloArchivo archivo3 = new HiloArchivo("Archivo3");
 
-        archivo1.start();
-        archivo2.start();
         archivo3.start();
+        archivo2.start();
+        archivo1.start();
+        
     }
     
     
