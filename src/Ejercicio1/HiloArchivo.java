@@ -2,8 +2,8 @@ package Ejercicio1;
 
 public class HiloArchivo extends Thread {
 
-    public HiloArchivo(){
-
+    public HiloArchivo(String nombreArchivo){
+        super(nombreArchivo);
     }
 
     @Override

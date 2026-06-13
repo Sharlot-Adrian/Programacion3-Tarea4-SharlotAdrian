@@ -2,9 +2,15 @@ package Ejercicio1;
 
 public class Main {
 
-    HiloArchivo Archivo1 = new HiloArchivo();
-    HiloArchivo Archivo2 = new HiloArchivo();
-    HiloArchivo Archivo3 = new HiloArchivo();
+    try{
+        HiloArchivo archivo1 = new HiloArchivo("Archivo1");
+        HiloArchivo archivo2 = new HiloArchivo("Archivo2");
+        HiloArchivo archivo3 = new HiloArchivo("Archivo3");
+
+        archivo1.start();
+    }
+    catch(InterruptedException e){
+    }
 
     
 }
