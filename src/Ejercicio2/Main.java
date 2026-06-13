@@ -8,10 +8,10 @@ public class Main {
         HiloCorredor carlos = new HiloCorredor("Carlos");
         
         System.out.println("Antes de la carrera: ");
-        System.out.println(juan.mostrarEstadoActual());
-        System.out.println(pedro.mostrarEstadoActual());
-        System.out.println(ana.mostrarEstadoActual());
-        System.out.println(carlos.mostrarEstadoActual());
+        System.out.println(juan.getState());
+        System.out.println(pedro.getState());
+        System.out.println(ana.getState());
+        System.out.println(carlos.getState());
 
         juan.start();
         pedro.start();
