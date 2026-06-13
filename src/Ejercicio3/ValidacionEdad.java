@@ -2,9 +2,11 @@ package Ejercicio3;
 import java.util.Scanner;
 public class ValidacionEdad {
 
-    Scanner scanner = new Scanner(System.in);
+    static Scanner scanner = new Scanner(System.in);
     
-    public void preguntarEdad(){
+    public static void preguntarEdad(){
+
+        System.out.println("Ingrese una edad: ");
         int edad = scanner.nextInt();
 
         try{
@@ -12,6 +14,6 @@ public class ValidacionEdad {
         }catch(EdadInvalidaException e){
             System.out.println(e.getMessage());
         }
-        
+
     }
 }
