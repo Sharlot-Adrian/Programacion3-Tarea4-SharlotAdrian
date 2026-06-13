@@ -17,11 +17,27 @@ public class HiloCorredor extends Thread {
             catch(InterruptedException e){
                 e.getStackTrace();
             }
-
-            System.out.println(getName() + "llego a la meta. ");
-
         }
+        System.out.println(getName() + " llego a la meta. ");
+        System.out.println(mostrarEstadoActual());
   
+    }
+
+    public String mostrarEstadoActual(){
+
+        if (getState() == Thread.State.NEW)
+            return getName() + ": Nuevo.";
+        else if (getState() == Thread.State.RUNNABLE)
+            return getName() + ": Corriendo.";
+        else if(getState() == Thread.State.TERMINATED)
+            return getName() + ": Muerto. ";
+        else if(getState() == Thread.State.TIMED_WAITING)
+            return (getName() + ": Esperando.");
+        else if(getState() == Thread.State.BLOCKED)
+            return getName() + ": Bloqueado.";
+        else
+            return getName() + ": Indefinido. ";
+
     }
     
 }
