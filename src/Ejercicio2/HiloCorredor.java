@@ -15,7 +15,7 @@ public class HiloCorredor extends Thread {
                 Thread.sleep(1000);
             }
             catch(InterruptedException e){
-                e.getStackTrace();
+                e.printStackTrace();
             }
         }
         System.out.println(getName() + " llego a la meta. ");
