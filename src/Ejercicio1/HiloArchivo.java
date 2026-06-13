@@ -16,13 +16,13 @@ public class HiloArchivo extends Thread {
             System.out.println(getName() + " " + i + "% " );
 
             try{
-                Thread.sleep(2000);
+                Thread.sleep(1000);
 
             }catch(InterruptedException e){
                 e.printStackTrace();
             }
         }
-        System.out.println(getName() + "completado.");
+        System.out.println(getName() + " completado.");
     }
     
 }
