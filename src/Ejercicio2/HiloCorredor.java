@@ -18,6 +18,8 @@ public class HiloCorredor extends Thread {
                 e.getStackTrace();
             }
 
+            System.out.println(getName() + "llego a la meta. ");
+
         }
   
     }

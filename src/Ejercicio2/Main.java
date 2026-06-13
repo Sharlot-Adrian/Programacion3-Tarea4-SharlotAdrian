@@ -7,6 +7,5 @@ public class Main {
         HiloCorredor ana = new HiloCorredor("Ana");
         HiloCorredor carlos = new HiloCorredor("Carlos");
         
-
     }
 }
