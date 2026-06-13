@@ -2,15 +2,17 @@ package Ejercicio1;
 
 public class Main {
 
-    try{
+    public static void main(String args []){
+
+    
         HiloArchivo archivo1 = new HiloArchivo("Archivo1");
         HiloArchivo archivo2 = new HiloArchivo("Archivo2");
         HiloArchivo archivo3 = new HiloArchivo("Archivo3");
 
         archivo1.start();
+        archivo2.start();
+        archivo3.start();
     }
-    catch(InterruptedException e){
-    }
-
+    
     
 }
