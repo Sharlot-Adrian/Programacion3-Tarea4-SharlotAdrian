@@ -26,7 +26,7 @@ public class GestionActividades {
 
             switch(opcion){
                 case 1:{
-
+                        System.out.println("\n[ AGREGAR ACTIVIDAD ]");
                     try{
                         FileWriter fr = new FileWriter("Actividades.txt", true);
                         BufferedWriter bw = new BufferedWriter(fr);
@@ -44,6 +44,7 @@ public class GestionActividades {
                     break;
                 }
                 case 2:{
+                    System.out.println("\n[ MOSTRAR ACTIVIDADES ]");
                     try{
                         FileReader fr = new FileReader("Actividades.txt");
                         BufferedReader br = new BufferedReader(fr);
@@ -62,9 +63,11 @@ public class GestionActividades {
                     break;
                 }
                 case 3:{
+                    System.out.println("Saliendo...");
                     break;
                 }
                 default:{
+                    System.out.println("Esa opcion no es valida.");
                     break;
                 }
 
