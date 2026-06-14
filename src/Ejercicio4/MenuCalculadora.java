@@ -10,7 +10,7 @@ public class MenuCalculadora {
         int opcion = 0;
 
         do{
-            System.out.println("[     CALCULADORA     ]");
+            System.out.println("\n[     CALCULADORA     ]");
             System.out.println("=======================");
             System.out.println("1. Suma                ");
             System.out.println("2. Resta               ");
@@ -38,7 +38,7 @@ public class MenuCalculadora {
                         System.out.println("Ingrese el segundo numero: ");
                         double num2 = scanner.nextDouble();
 
-                        System.out.println(CalculadoraSegura.suma(num1, num2));
+                        System.out.println("\nResultado: "+ CalculadoraSegura.suma(num1, num2));
 
                     }catch(InputMismatchException e){
                         System.out.println("Error: Debe digitar un numero valido. ");
@@ -57,7 +57,7 @@ public class MenuCalculadora {
                         System.out.println("Ingrese el segundo numero: ");
                         double num2 = scanner.nextDouble();
 
-                        System.out.println(CalculadoraSegura.resta(num1, num2));
+                        System.out.println("\nResultado: "+ CalculadoraSegura.resta(num1, num2));
 
                     }catch(InputMismatchException e){
                         System.out.println("Error: Debe digitar un numero valido. ");
@@ -75,7 +75,7 @@ public class MenuCalculadora {
                         System.out.println("Ingrese el segundo numero: ");
                         double num2 = scanner.nextDouble();
 
-                        System.out.println(CalculadoraSegura.multiplicacion(num1,num2));
+                        System.out.println("\nResultado: "+ CalculadoraSegura.multiplicacion(num1,num2));
 
                     }catch(InputMismatchException e){
                         System.out.println("Error: Debe digitar un numero valido. ");
@@ -93,10 +93,10 @@ public class MenuCalculadora {
                         System.out.println("Ingrese el segundo numero: ");
                         double divisor = scanner.nextDouble();
 
-                        System.out.println(CalculadoraSegura.division(dividendo, divisor));
+                        System.out.println("\nResultado: "+ CalculadoraSegura.division(dividendo, divisor));
 
                     }catch(ArithmeticException e){
-                        e.getMessage();
+                        System.out.println(e.getMessage());
                     }
                     finally{
                         System.out.println("Proceso finalizado. ");
