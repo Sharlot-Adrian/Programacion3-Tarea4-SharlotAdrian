@@ -11,7 +11,7 @@ public class HiloArchivo extends Thread {
         for (int i = 0; i <=100; i++){
             
             if (i == 0)
-                System.out.println("Descargando Archivo "+ getName());
+                System.out.println("Descargando"+ getName());
 
             System.out.println(getName() + " " + i + "% " );
 
