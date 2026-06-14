@@ -11,7 +11,7 @@ public class Main {
         try {
             
 
-            System.out.println("Antes de la carrera: ");
+            System.out.println("Estado inicial de los hilos: ");
             System.out.println(juan.getName() + ": " + juan.getState());
             System.out.println(pedro.getName() + ": " + pedro.getState());
             System.out.println(ana.getName() + ": " + ana.getState());
@@ -26,7 +26,7 @@ public class Main {
             e.printStackTrace();
         }
         
-        System.out.println("Despues de la carrera: ");
+        System.out.println("Proximo estado de los hilos: ");
         System.out.println(juan.getName() + ": " + juan.getState());
         System.out.println(pedro.getName() + ": " + pedro.getState());
         System.out.println(ana.getName() + ": " + ana.getState());
