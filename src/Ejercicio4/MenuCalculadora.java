@@ -38,7 +38,7 @@ public class MenuCalculadora {
                         System.out.println("Ingrese el segundo numero: ");
                         double num2 = scanner.nextDouble();
 
-                        CalculadoraSegura.suma(num1, num2);
+                        System.out.println(CalculadoraSegura.suma(num1, num2));
 
                     }catch(InputMismatchException e){
                         System.out.println("Error: Debe digitar un numero valido. ");
@@ -57,7 +57,7 @@ public class MenuCalculadora {
                         System.out.println("Ingrese el segundo numero: ");
                         double num2 = scanner.nextDouble();
 
-                        CalculadoraSegura.resta(num1, num2);
+                        System.out.println(CalculadoraSegura.resta(num1, num2));
 
                     }catch(InputMismatchException e){
                         System.out.println("Error: Debe digitar un numero valido. ");
@@ -75,7 +75,7 @@ public class MenuCalculadora {
                         System.out.println("Ingrese el segundo numero: ");
                         double num2 = scanner.nextDouble();
 
-                        CalculadoraSegura.multiplicacion(num1,num2);
+                        System.out.println(CalculadoraSegura.multiplicacion(num1,num2));
 
                     }catch(InputMismatchException e){
                         System.out.println("Error: Debe digitar un numero valido. ");
@@ -93,7 +93,7 @@ public class MenuCalculadora {
                         System.out.println("Ingrese el segundo numero: ");
                         double divisor = scanner.nextDouble();
 
-                        CalculadoraSegura.division(dividendo, divisor);
+                        System.out.println(CalculadoraSegura.division(dividendo, divisor));
 
                     }catch(ArithmeticException e){
                         e.getMessage();
