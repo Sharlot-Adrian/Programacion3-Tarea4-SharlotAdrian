@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class GestionActividades {
 
-    Scanner scanner = new Scanner(System.in);
+    static Scanner scanner = new Scanner(System.in);
 
-    public void gestionarActividades(){
+    public static void gestionarActividades(){
 
         File registro = new File("Actividades.txt");
         int opcion = 0;
@@ -22,6 +22,7 @@ public class GestionActividades {
 
             System.out.println("\nIngrese el numero de la opcion que desea seleccionar: ");
             opcion = scanner.nextInt();
+            scanner.nextLine();
 
             switch(opcion){
                 case 1:{
@@ -38,7 +39,7 @@ public class GestionActividades {
 
 
                     }catch(IOException e){
-                        System.out.println("Error al intentar escribir en el archivo. ");
+                        System.out.println("Error al intentar escribir en el archivo. El archivo no existe. ");
                     }
                     break;
                 }
@@ -55,7 +56,7 @@ public class GestionActividades {
                         br.close();
 
                     }catch(IOException e){
-                        System.out.
+                        System.out.println("Error al intentar leer el archivo. El archivo no existe.");
 
                     }
                     break;
